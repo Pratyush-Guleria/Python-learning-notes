@@ -1,81 +1,146 @@
-# What is a While loop ?
-#While loop executes a block of code repeatedly as long as the condition remains True.
+# 🔁 While Loop in Python
 
+## What is a While Loop?
+A while loop executes a block of code repeatedly **as long as the condition is True**.
 
-# What problem does while loop solves ?
-# While loops is used to execute some code for infinite times untile some condition is true.
+---
 
-# Example : 1
+## What problem does it solve?
+A while loop is used when:
+- You don’t know how many times the loop should run.
+- You want to repeat code until a condition becomes False.
 
-name = input("Enter your name :").strip().title()
+---
 
-while name =="":
-        print("You didn't enter your name")
-        name = input("Enter your name :").title().strip()
+## Example 1: Input Validation
+
+```python
+
+name = input("Enter your name: ").strip().title()
+
+while name == "":
+    print("You didn't enter your name")
+    name = input("Enter your name: ").strip().title()
+
 print(f"Your name is {name}")
 
-# Example : 2 (infinite loop)
-# break = used to exit the loop entirely
+```
+
+## Example 2: Infinite Loop + break
+
+```python
 
 while True:
-    name = input("Enter your name :")
-    if name !="": 
+    name = input("Enter your name: ")
+    if name != "":
         break
-        
-# Example :3 
-# continue = skips the next iteration of the loop
+
+```
+> ⚠️ Important :- break exits the loop completely.
+
+## Example 3: continue 
+
+```python
 
 number = 1
 
-while number < 10 :
-     number +=1
-     if number ==3:
-          continue 
-     print(number)
+while number < 10:
+    number += 1
+    if number == 3:
+        continue
+    print(number)
 
-# Example :4
-# pass = does nothing just act as a placeholder 
+```
+> ⚠️ Important :- continue skips the current iteration.
+
+## Example 4: pass
+
+```python 
+
 n = 1
-while n <=5:
-     if n == 2:
-          pass
-     else:
-          print(n)
-     n +=1
 
-# For loop
+while n <= 5:
+    if n == 2:
+        pass
+    else:
+        print(n)
+    n += 1
 
-# What is for loop ?
-# for loop is a loop is used to exuted some code for fixed number of times.
-# You can interate over a range, string, sequence.
+```
+> ⚠️ Important :- pass does nothing (placeholder).
 
-# What problem does it solves?
-# It helps to exucute a block of code for fixed number of time. 
+---
 
-# Syntax of for loop :
+## 📁 `for_loop.md`
 
-# for variable_name in range (start,stop,step):
-#     print(variable_name)
+```markdown
+# 🔁 For Loop in Python
 
-# Example 1:
+## What is a For Loop?
+A for loop is used to execute a block of code **a fixed number of times**.
 
-for i in range (2,22,2):
-     print(i)
+You can iterate over:
+- range()
+- lists
+- strings
+- other sequences
 
-# Exmaple 2:
+---
 
-name = ["Rahul", "Amit", "Ankit"]
-for i in name:
-     print(i)
+## What problem does it solve?
+It helps when:
+- You know how many times to run the loop.
+- You want to iterate over a collection (list, string, etc.).
 
-# Example 3:
-letter = "Hello"
-for i in letter:
-     print(i)
+---
 
-# Example 4:
+## Syntax
+
+```python
+
+for variable in range(start, stop, step):
+    print(variable)
+
+```
+
+## Example 1 : Using range()
+
+```python
+
+for i in range(2, 22, 2):
+    print(i)
+
+```
+
+## Example 2: Loop through list
+
+```python
+
+names = ["Rahul", "Amit", "Ankit"]
+
+for name in names:
+    print(name)
+
+```
+
+## Example 3: Loop through string
+
+```python
+
+word = "Hello"
+
+for letter in word:
+    print(letter)
+
+```
+
+## Example 4: Real-world example
+
+```python
 
 prices = [100, 500, 1000]
 
 for p in prices:
-    print(f"Naya price: {p - 50}")
+    print(f"Discounted price: {p - 50}")
+    
+```
