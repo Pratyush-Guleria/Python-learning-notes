@@ -12,6 +12,8 @@ They help the program decide:
 
 ## Example 1
 
+```python
+
 age = int(input("Enter your age: "))
 
 if age >= 18:
@@ -21,9 +23,11 @@ elif age < 0:
 else:
     print("You must be 18+ to vote")
 
----
+```
 
 ## Example 2
+
+```python
 
 response = input("Do you want food? (Y/N): ")
 
@@ -31,3 +35,5 @@ if response == "Y":
     print("Have some food")
 else:
     print("Okay, no food.")
+
+```
