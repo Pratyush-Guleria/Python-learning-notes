@@ -13,8 +13,12 @@ It makes code:
 
 ## Example
 
+```python
+
 name = input("Enter your name: ")
 print(f"Hello, {name}")
+
+```
 
 Here:
 - f before the string allows variable interpolation
