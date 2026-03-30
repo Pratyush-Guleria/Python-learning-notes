@@ -2,7 +2,6 @@
 
 # 📄 Indentation.md
 
-```python
 # Indentation
 
 ## What is Indentation?
@@ -16,12 +15,15 @@ In Python:
 
 Example:
 
+```python
+
 age = 20
 
 if age >= 18:
     print("Adult")
 
-If indentation is incorrect:
+```
+> ⚠️ Important :- If indentation is incorrect: Python will throw an error.
 Python will throw an error.
 
 Unlike other languages,
