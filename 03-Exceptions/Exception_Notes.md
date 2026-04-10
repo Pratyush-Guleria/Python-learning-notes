@@ -1,15 +1,3 @@
- pratyushguleria@Pratyushs-MacBook-Air  ~  cd
- pratyushguleria@Pratyushs-MacBook-Air  ~  clear
-  UW PICO 5.09                                                           New Buffer
-
-
-
-
-
-
-
-
-
 # ⚠ ️ Exception Handling in Python
 
 ## 🧠 What are Exceptions?
